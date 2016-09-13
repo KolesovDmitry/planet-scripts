@@ -1,0 +1,11 @@
+{
+   "resource": {
+     "cls": "raster_style",
+     "description": null,
+     "display_name": "STYLENAME",
+     "keyname": null,
+     "parent": {
+       "id": STYLEID
+     }
+   }
+ }

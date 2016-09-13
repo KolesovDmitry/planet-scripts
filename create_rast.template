@@ -1,0 +1,13 @@
+{
+  "resource": {
+     "cls": "raster_layer",
+     "display_name": "RASTERNAME",
+     "parent": {
+       "id": PARENTID
+     }
+   },
+  "raster_layer": {
+     "source":  RASTERSOURCE, 
+     "srs": {"id": 3857}
+  }
+}

@@ -17,10 +17,16 @@ downloader.sh XXX  scenes.geojson analytic AN
 
 ## Scripts
 
-### Search.sh
+### search.sh
 A simple wrapper around `planet` script. It allows searching of planet scenes.
 
 ## downloader.sh
 This script downloads selected scenes from planet.com.
 
+## creator.sh
+This script uploads raster to nextgis.com webgis: `creator.sh RASTER ID_OF_PARENT_RESOURCE USER:PASSWORD NEXTGISWEB_URL`
 
+
+```
+creator.sh VIS/20160609_235953_1_0c78.tif 101 USER:PASS http://kolesov.nextgis.com/
+```
