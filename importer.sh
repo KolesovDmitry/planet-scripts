@@ -1,0 +1,12 @@
+#!/bin/sh
+
+DIR=$1
+PARENT_ID=$2
+CREDENTIALS=$3
+NEXTGIS_URL=$4
+
+for FILE in $DIR/*tif
+do
+  ./creator.sh $FILE $PARENT_ID $CREDENTIALS $NEXTGIS_URL
+done
+

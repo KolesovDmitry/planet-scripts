@@ -14,6 +14,10 @@ search.sh XXX  XXX 2016-05-31T21:00:00.000Z 2016-09-01T21:00:00.000Z 1 2 > scene
 downloader.sh XXX  scenes.geojson visual VIS
 downloader.sh XXX  scenes.geojson analytic AN
 ```
+5. Upload scenes to nextgis.com:
+```
+importer.sh VIS 101 NG_USER:NG_PASS http://kolesov.nextgis.com/
+```
 
 ## Scripts
 
@@ -24,9 +28,13 @@ A simple wrapper around `planet` script. It allows searching of planet scenes.
 This script downloads selected scenes from planet.com.
 
 ## creator.sh
-This script uploads raster to nextgis.com webgis: `creator.sh RASTER ID_OF_PARENT_RESOURCE USER:PASSWORD NEXTGISWEB_URL`
-
-
+This script uploads a raster to nextgis.com webgis: `creator.sh RASTER ID_OF_PARENT_RESOURCE USER:PASSWORD NEXTGISWEB_URL`
 ```
 creator.sh VIS/20160609_235953_1_0c78.tif 101 USER:PASS http://kolesov.nextgis.com/
+```
+
+## importer.sh
+This script uploads all rasters to nextgis.com webgis: `importer.sh RASTER_DIR ID_OF_PARENT_RESOURCE USER:PASSWORD NEXTGISWEB_URL`
+```
+creator.sh VIS 101 USER:PASS http://kolesov.nextgis.com/
 ```
